@@ -1,1 +1,561 @@
-const CONTENT = {"sections": [{"id": 1, "title": "Department orientation", "intro": "Build reliable daily habits: timekeeping, access badges, radio discipline, equipment accountability and post relief.", "tasks": ["Clock in at the start of shift and clock out at the end using the approved timekeeping system", "Explain the rules for late punches, missed punches and punch corrections, and who to notify", "Take two 15-minute breaks and one 30-minute lunch, with the post relieved before leaving it", "Never clock in or out for another employee", "Wear the Memorial Hermann ID badge visible at chest level at all times", "Badge into controlled doors and elevators and never prop or tailgate through them", "Never lend a badge or allow another person to use it", "Report a lost, stolen or damaged badge to dispatch and the supervisor immediately", "Sign out keys, radio and body-worn camera at dispatch and confirm they are logged on the inventory list", "Complete a radio check at the start of shift on the preset \"security\" channel", "Use proper radio etiquette: short, clear, no patient names or MRNs over the radio", "Report lost, damaged or malfunctioning keys, radios or cameras right away", "Return all equipment to dispatch at end of shift and confirm it is logged back in", "Locate the posted schedule and explain how to request a shift swap", "Submit a PTO request through the approved process and know the notice required", "Follow the call-off procedure: who to notify, how early, and what to say", "Explain how overtime is approved before it is worked", "Explain the officer's role in protecting hospital property, equipment and personal belongings", "Recognize and report unsecured equipment, open doors and unattended items", "Report suspicious removal of hospital equipment to dispatch and the supervisor", "Wear a complete, clean, department-standard uniform with name badge and issued duty gear", "Wear the reflective vest at all times on traffic and exterior posts", "Wear and care for any other issued protective vest per department policy"]}, {"id": 2, "title": "Sensitive areas & garages", "intro": "Walk each sensitive area with your trainer. Identify the location, permitted access, security risks and emergency contacts.", "tasks": ["Emergency Center (EC): entrances, weapons detection, waiting lobbies, ambulance bay, triage", "Intensive Care Units (ICU): access doors, visitor rules, high-risk patient rooms", "Neonatal ICU (NICU): secured entry, infant protection, who may enter", "Labor and Delivery (L&D): secured entry, infant protection, visitor controls", "Pharmacy: restricted access, controlled-substance storage, who may enter", "Human Resources (HR): office hours, access, handling of upset employees or visitors", "Surgery waiting areas: family waiting rooms, escort routes, crowd and conflict concerns", "Locate cameras, panic buttons and duress alarms in each area above", "Sterling Garage: entrances and exits, levels, stairwells, elevators, emergency call boxes, camera coverage", "Garage 4: entrances and exits, levels, stairwells, elevators, emergency call boxes, camera coverage", "All other TMC garages: walk each one and identify entrances, stairwells and elevators", "Identify dark, isolated or high-risk spots in each garage and when to check them", "Explain how to escort a visitor, patient or employee to a vehicle on request"]}, {"id": 3, "title": "Policies & emergency codes", "intro": "Explain policies in your own words and rehearse the security role in each emergency. Confirm code definitions against current Memorial Hermann policy with your supervisor.", "tasks": ["Visiting hours: state the hours, exceptions, and how to handle visitors who refuse to leave", "Life Flight: landing and arrival procedure, security role, and crowd and path control", "Telephone etiquette: answer professionally, identify self and department, take accurate messages, and transfer correctly", "Call dispatch at extension 40000 from any hospital phone when the radio is not usable", "Incident reports: when one is required, what facts it must contain, and the deadline to submit it", "Resolver: log in, find the incident entry screen, and enter a complete report", "HUGS infant protection alarms: location of the system, how to read the alarm, and the officer's response", "Code Pink (infant abduction, or a breach of the L&D or child barrier where sensors are on the children): exits, stairwells and garage coverage, and what to look for", "Code Red (fire in the facility): assess with Engineering for a simple alarm reset, report any actual fire to the responding fire department, and support evacuation", "Code Blue (patient in cardiac arrest): respond for possible emotional or volatile family members or visitors, clear the path, and control the crowd", "Code Green (volatile or escalating behavior): who responds, how to approach, and when to back off", "Rapid Response (medical emergency): escort responders and keep the area clear", "Elevator entrapment: acknowledge the call, locate the car, communicate with those inside, and request elevator service", "Explain how to stay calm, use clear radio language and report status during every code", "Code Gray (inclement weather): a status sent across the hospital system to prepare for severe weather; explain the officer's preparation duties", "Active shooter: announced plainly as \"active shooter\" so there is absolute clarity; explain the officer's response and communication"]}, {"id": 4, "title": "Dispatch operations", "intro": "Practice in the Security Operations Center with your trainer. Use Resolver for reports, CCURE for access and Avigilon for camera operations.", "tasks": ["Start and close a guard tour and confirm the tour is secured; two tours are required each shift", "Record tour completion percentage and each officer's completions", "Run radio checks and log them", "Take service calls, assign them to an officer and track them to completion", "Enter dispatch notes and calls for service in Resolver, including Avigilon camera names and body-worn camera serial numbers", "View, switch and manage cameras in Avigilon, and know which cameras cover each key post", "Monitor and respond to Gamma Knife alarms and cameras", "Take emergency call box calls and elevator entrapment calls", "Receive and clear panic and duress alarms, and send an officer so one arrives within 2.5 minutes", "Monitor HUGS floors and respond to HUGS alarms", "Dispatch and clear a Code Green and assign the responders", "Dispatch and clear Code Pink, Code Red, Code Blue, Code Gray and Rapid Response calls, and announce an active shooter plainly as \"active shooter\"", "Dispatch and clear elevator entrapments", "Decide how to staff a response with the Team Lead, Senior Officer or Officer in Charge", "Create a TSI report", "Create a TSI facility ticket and work order", "Create a badge and add or remove clearances in CCURE", "Log patient property in the property log with the MRN sticker handed over in person, never read over the radio", "Track keys, radios and body-worn cameras on the inventory lists", "Download scene photos to the system and never use personal phones", "Escalate crimes on campus and news-media- worthy events promptly"]}, {"id": 5, "title": "Vehicle patrol & perimeter", "intro": "Inspect before driving, patrol safely and document findings. Coordinate parking enforcement and towing through the approved process.", "tasks": ["Complete the vehicle inspection sheet at the start of every shift and report damage or defects before driving", "Use the fuel card and notify management when the vehicle needs refueling", "Drive safely on campus, yield to pedestrians, ambulances and Life Flight traffic", "Radio dispatch on leaving and returning from patrol and when stopping for an incident", "Identify parking violations and apply the department enforcement process", "Handle a driver who disputes a violation calmly and professionally", "Tow a vehicle: required approvals, documentation, notifications and tow company contact", "Escalate high-value or sensitive vehicles to the immediate supervisor before any tow", "Check exterior stairwells for loitering, damage, trash and unsecured doors", "Check lighting in all garage areas and report outages and dark areas", "Perimeter checks of all building doors at night: confirm each is locked and report any that are not", "Record each patrol in Resolver and notify dispatch of every finding"]}, {"id": 6, "title": "Medical plazas", "intro": "Learn the operating hours, contacts and access arrangements for each assigned plaza. Complete the reference sheet with your trainer.", "tasks": ["State each plaza's hours of operation and what changes after hours", "Complete the round of the plaza perimeter and report findings to dispatch", "Contact the contract security officers for each plaza and explain who handles what", "Locate the plaza elevator access card in the TRAKA system, which opens to a new officer once clearance is granted in the system; explain who may use it and how it is signed out and returned", "Explain the emergency response process and the contact numbers for each plaza's security operation", "Secure and unsecure plaza doors at the correct times and log them", "Respond to a plaza incident, request backup and complete the report"]}, {"id": 7, "title": "Interior rounds & property", "intro": "Support safe hospital operations through rounds, emergency response, documented door access and accountable property handling.", "tasks": ["Respond to a Code Green as the assigned rounding officer, as part of the four-officer response", "Respond to a duress alarm and clear it with dispatch", "Respond to Code Pink, Code Red, Code Blue, Code Gray, active shooter, Rapid Response and elevator entrapments", "Code Angel (intake or release of a deceased patient, with Hospital Administrator approval): receive the patient into the morgue and release to a funeral home with Hospital Administrator approval, following the full procedure", "Patrol sensitive areas and waiting rooms, and report findings to dispatch", "Round behavioral patient locations and report concerns to dispatch and unit staff", "Respond to a patient belongings call: start the body-worn camera, tell dispatch, and go to the location", "Witness the clinical staff member's inventory while the sheet is completed in full", "Route the inventory copies correctly: patient or chart copy and pink copy on the bag", "Deliver sealed property in person to the dispatch office, never store it in the Emergency Center", "Place property in the property room or locker and state the location aloud so dispatch can log it", "Handle Behavioral Health Patient (BHP) property and store it in the behavioral patient lockers", "Document each transfer between units and notify dispatch before moving and when arriving", "Document each request by staff to unlock a door: who, where, when and why", "Complete hospital lockups and unlocks on schedule and log them", "Respond to a lost and found report: take the report, record the item and follow the turn-in process"]}, {"id": 8, "title": "Emergency Center & privacy", "intro": "Provide professional visitor support, conduct screening under approved policy and protect patient information.", "tasks": ["Greet visitors and patients during business hours with a professional, welcoming approach", "Run weapons detection screening: bag search steps, wanding, and handling a red-light alarm", "Explain tobacco and ignition-source rules at the screening point and the amnesty box", "Document visitors to the hospital after business hours", "Patrol the waiting lobbies, perimeter and valet area and report findings to dispatch", "Respond to every code and call for help from the Emergency Center", "HIPAA: explain what protected health information is and what an officer may never say, post or share", "Never discuss a patient's presence, condition or location with callers or visitors unless policy allows", "Durfee (DERFI) letters: explain when law enforcement must complete one and what it must contain", "Collect completed letters and give them to the immediate supervisor or Senior Officer by end of shift", "If law enforcement refuses to sign, ask for the badge number, document the refusal and escalate to Emergency Room management", "Emergency Detention Order (EDO) arrivals: required forms and documentation"]}], "quiz": [{"id": 1, "q": "How many breaks does an officer on a stationary post receive per shift?", "options": ["One 30-minute lunch only", "Two 15-minute breaks and one 30-minute lunch", "Three 20-minute breaks", "Breaks only when the post is slow"], "answer": 1}, {"id": 2, "q": "When may an officer leave a stationary post?", "options": ["Any time the area is quiet", "When a coworker asks", "Only when properly relieved, or to protect life", "After two hours on post"], "answer": 2}, {"id": 3, "q": "What should an officer do after losing a Memorial Hermann ID badge?", "options": ["Wait until the end of the shift", "Borrow a coworker's badge", "Tell HR next week", "Report it to dispatch and the supervisor immediately"], "answer": 3}, {"id": 4, "q": "Which information must never be said over the radio?", "options": ["A patient's MRN and personal information", "The officer's location", "The type of call", "A request for assistance"], "answer": 0}, {"id": 5, "q": "What is the dispatch extension on a hospital phone?", "options": ["40000", "4000", "400", "4"], "answer": 0}, {"id": 6, "q": "When must the reflective vest be worn on a traffic post?", "options": ["Only at night", "Only in the rain", "At all times", "Only when a supervisor is present"], "answer": 2}, {"id": 7, "q": "How many guard tours are required each shift?", "options": ["One", "Three", "Four", "Two"], "answer": 3}, {"id": 8, "q": "What response time applies to a duress alarm?", "options": ["Within 15 minutes", "Within 10 minutes", "A physical response in 2.5 minutes or less", "Only after the next guard tour"], "answer": 2}, {"id": 9, "q": "What is a Code Blue?", "options": ["Fire", "A patient in cardiac arrest", "Infant abduction", "Volatile behavior"], "answer": 1}, {"id": 10, "q": "What is a Code Red?", "options": ["Fire", "Severe weather", "Cardiac arrest", "Missing child"], "answer": 0}, {"id": 11, "q": "What is a Code Pink?", "options": ["Fire", "Cardiac arrest", "Severe weather", "Infant abduction or a breach of the L&D or child barrier"], "answer": 3}, {"id": 12, "q": "Why is a Code Green response limited to about four officers?", "options": ["Other officers are on break", "It is not a fixed rule", "It allows quick assessment without overwhelming the scene, which could escalate it and deplete coverage elsewhere", "Only supervisors may respond"], "answer": 2}, {"id": 13, "q": "When is Rapid Response called?", "options": ["A medical emergency in the immediate area", "A fire", "A parking dispute", "Lost property"], "answer": 0}, {"id": 14, "q": "What is the correct response to an elevator entrapment?", "options": ["Pry the doors open", "Wait for maintenance to call", "Evacuate the building", "Acknowledge the call, locate the car, talk with those inside and request elevator service"], "answer": 3}, {"id": 15, "q": "A caller asks whether a patient is in the hospital. What is the correct response?", "options": ["Confirm and give the room number", "Do not disclose patient information unless policy allows, and refer the caller to the proper channel", "Give the patient's condition only", "Ask the caller's relationship, then give the room"], "answer": 1}, {"id": 16, "q": "Where does sealed patient property go after the inventory?", "options": ["Stored in the Emergency Center", "The officer's locker", "Delivered in person to the dispatch office, then placed in the property room or locker", "The patient's vehicle"], "answer": 2}, {"id": 17, "q": "Where does the pink copy of the inventory sheet go?", "options": ["Attached to the property bag", "Given to the patient", "Discarded", "Given to law enforcement"], "answer": 0}, {"id": 18, "q": "Where is Behavioral Health Patient property stored?", "options": ["On the general property room shelf", "In Emergency Center storage", "In the security desk drawer", "In the behavioral patient lockers"], "answer": 3}, {"id": 19, "q": "What does a red light on the weapons detection system mean?", "options": ["The system is ready", "An alarm, so use the hand wand to locate the item before entry", "The person may pass through", "The battery is low"], "answer": 1}, {"id": 20, "q": "How should bags be searched at weapons detection?", "options": ["Reach in with bare hands", "Dump the bag on the floor", "The owner opens the bag and displays the contents, and the officer never places bare hands inside", "Skip bags that look empty"], "answer": 2}, {"id": 21, "q": "What is the rule on tobacco and lighters beyond weapons detection?", "options": ["They are not permitted: discard them, use the amnesty box or return them to the vehicle", "They are allowed in the waiting room", "They are allowed for staff", "They are allowed outdoors only"], "answer": 0}, {"id": 22, "q": "A law enforcement officer refuses to complete or sign the Durfee letter. What does the officer do?", "options": ["Ignore it", "Take their weapon", "Deny all entry for an hour", "Respectfully ask for the badge number, document the refusal and escalate to Emergency Room management"], "answer": 3}, {"id": 23, "q": "What is Resolver used for?", "options": ["Payroll", "Parking permits", "Incident reports and dispatch calls for service", "Printing badges"], "answer": 2}, {"id": 24, "q": "Which system is used to view the CCTV cameras?", "options": ["CCURE", "Avigilon", "Resolver", "Axon"], "answer": 1}, {"id": 25, "q": "What is CCURE used for?", "options": ["Access control and badge clearances", "Camera viewing", "Fuel tracking", "Radio checks"], "answer": 0}, {"id": 26, "q": "When is the vehicle inspection sheet completed?", "options": ["Weekly", "Monthly", "Only after an accident", "At the start of every shift"], "answer": 3}, {"id": 27, "q": "What should an officer do when the patrol vehicle needs fuel?", "options": ["Use a personal card", "Notify management so it can be refueled with the fuel card", "Park the vehicle", "Ignore it until the next shift"], "answer": 1}, {"id": 28, "q": "What is the purpose of night perimeter door checks?", "options": ["Cleaning the windows", "Counting visitors", "Confirming each door is locked and reporting any that are not", "Issuing parking tickets"], "answer": 2}, {"id": 29, "q": "What should an officer do on finding a garage light out?", "options": ["Report and document it", "Ignore it", "Repair it", "Wait until morning"], "answer": 0}, {"id": 30, "q": "What should an incident report contain?", "options": ["Only injuries", "The officer's opinions", "A verbal summary only", "Factual details of who, what, when and where, actions taken and notifications, with no opinions"], "answer": 3}, {"id": 31, "q": "What is a Code Angel?", "options": ["A fire in the facility", "A severe weather status", "The intake or release of a deceased patient, with Hospital Administrator approval", "A missing patient"], "answer": 2}, {"id": 32, "q": "What is a Code Gray?", "options": ["A fire in the facility", "A patient in cardiac arrest", "An active shooter", "An inclement weather status sent across the hospital system"], "answer": 3}, {"id": 33, "q": "How is an active shooter announced?", "options": ["As a color code", "Plainly as \"active shooter\" so there is absolute clarity", "By quiet phone calls only", "Only to supervisors"], "answer": 1}], "examples": [{"title": "Code Green · Emergency Center", "text": "At 14:12 the registration clerk asked me for help with Visitor 1, who was\nshouting at staff about a wait time. I notified dispatch by radio and requested a Code\nGreen. Visitor 1 continued shouting and stepped toward the triage desk. I stood at a safe\ndistance, kept my hands visible and asked him to speak with me away from the desk. He\nagreed at 14:15 and walked with me to the side of the lobby. The Senior Officer arrived at\n14:16. I explained the wait process, and he sat down at 14:21. No force was used, no one\nwas injured and no property was damaged. Dispatch cleared the Code Green at 14:24. The\nED Charge Nurse was told about the incident."}, {"title": "Vehicle damage · Sterling Garage", "text": "At 19:40 a visitor flagged me down on Level 3 and reported that her silver sedan\nhad a dent and paint transfer on the rear bumper that was not there when she parked at\n15:30. I photographed the damage with the department camera and recorded the vehicle\nplate. The visitor said she did not see the collision. I asked dispatch to review Sterling-L3-\nEast for the 15:30 to 19:40 period. Dispatch reported that no footage showed the area of\nthe vehicle. I gave the visitor the report number, told her that she may file a police report,\nand offered to escort her to the exit. She declined an escort and left at 20:05. The Security\nSupervisor was notified."}, {"title": "Elevator entrapment", "text": "At 08:05 dispatch sent me to Elevator 4 after an emergency call from inside the\ncar. I arrived at 08:08 and spoke with the two visitors through the door. Neither reported\nan injury or medical problem. I told them that help was on the way and stayed beside the\nelevator. Dispatch contacted elevator service at 08:09 and I confirmed the car location. I\nkept the area clear and spoke with the visitors every few minutes. Elevator service arrived\nat 08:34 and brought the car to the next floor at 08:41. The two visitors left the elevator\nunhurt. Dispatch cleared the call at 08:45."}]};
+const CONTENT = {
+  sections: [
+    {
+      id: 1,
+      title: "Department orientation",
+      intro: "Build reliable daily habits: timekeeping, access badges, radio discipline, equipment accountability and post relief.",
+      tasks: [
+        "Clock in at the start of shift and clock out at the end using the approved timekeeping system",
+        "Explain the rules for late punches, missed punches and punch corrections, and who to notify",
+        "Take two 15-minute breaks and one 30-minute lunch, with the post relieved before leaving it",
+        "Never clock in or out for another employee",
+        "Wear the Memorial Hermann ID badge visible at chest level at all times",
+        "Badge into controlled doors and elevators and never prop or tailgate through them",
+        "Never lend a badge or allow another person to use it",
+        "Report a lost, stolen or damaged badge to dispatch and the supervisor immediately",
+        "Sign out keys, radio and body-worn camera at dispatch and confirm they are logged on the inventory list",
+        "Complete a radio check at the start of shift on the preset \"security\" channel",
+        "Use proper radio etiquette: short, clear, no patient names or MRNs over the radio",
+        "Report lost, damaged or malfunctioning keys, radios or cameras right away",
+        "Return all equipment to dispatch at end of shift and confirm it is logged back in",
+        "Locate the posted schedule and explain how to request a shift swap",
+        "Submit a PTO request through the approved process and know the notice required",
+        "Follow the call-off procedure: who to notify, how early, and what to say",
+        "Explain how overtime is approved before it is worked",
+        "Explain the officer's role in protecting hospital property, equipment and personal belongings",
+        "Recognize and report unsecured equipment, open doors and unattended items",
+        "Report suspicious removal of hospital equipment to dispatch and the supervisor",
+        "Wear a complete, clean, department-standard uniform with name badge and issued duty gear",
+        "Wear the reflective vest at all times on traffic and exterior posts",
+        "Wear and care for any other issued protective vest per department policy"
+      ]
+    },
+    {
+      id: 2,
+      title: "Sensitive areas & garages",
+      intro: "Walk each sensitive area with your trainer. Identify the location, permitted access, security risks and emergency contacts.",
+      tasks: [
+        "Emergency Center (EC): entrances, weapons detection, waiting lobbies, ambulance bay, triage",
+        "Intensive Care Units (ICU): access doors, visitor rules, high-risk patient rooms",
+        "Neonatal ICU (NICU): secured entry, infant protection, who may enter",
+        "Labor and Delivery (L&D): secured entry, infant protection, visitor controls",
+        "Pharmacy: restricted access, controlled-substance storage, who may enter",
+        "Human Resources (HR): office hours, access, handling of upset employees or visitors",
+        "Surgery waiting areas: family waiting rooms, escort routes, crowd and conflict concerns",
+        "Locate cameras, panic buttons and duress alarms in each area above",
+        "Sterling Garage: entrances and exits, levels, stairwells, elevators, emergency call boxes, camera coverage",
+        "Garage 4: entrances and exits, levels, stairwells, elevators, emergency call boxes, camera coverage",
+        "All other TMC garages: walk each one and identify entrances, stairwells and elevators",
+        "Identify dark, isolated or high-risk spots in each garage and when to check them",
+        "Explain how to escort a visitor, patient or employee to a vehicle on request"
+      ]
+    },
+    {
+      id: 3,
+      title: "Policies & emergency codes",
+      intro: "Explain policies in your own words and rehearse the security role in each emergency. Confirm code definitions against current Memorial Hermann policy with your supervisor.",
+      tasks: [
+        "Visiting hours: state the hours, exceptions, and how to handle visitors who refuse to leave",
+        "Life Flight: landing and arrival procedure, security role, and crowd and path control",
+        "Telephone etiquette: answer professionally, identify self and department, take accurate messages, and transfer correctly",
+        "Call dispatch at extension 40000 from any hospital phone when the radio is not usable",
+        "Incident reports: when one is required, what facts it must contain, and the deadline to submit it",
+        "Resolver: log in, find the incident entry screen, and enter a complete report",
+        "HUGS infant protection alarms: location of the system, how to read the alarm, and the officer's response",
+        "Code Pink (infant abduction, or a breach of the L&D or child barrier where sensors are on the children): exits, stairwells and garage coverage, and what to look for",
+        "Code Red (fire in the facility): assess with Engineering for a simple alarm reset, report any actual fire to the responding fire department, and support evacuation",
+        "Code Blue (patient in cardiac arrest): respond for possible emotional or volatile family members or visitors, clear the path, and control the crowd",
+        "Code Green (volatile or escalating behavior): who responds, how to approach, and when to back off",
+        "Rapid Response (medical emergency): escort responders and keep the area clear",
+        "Elevator entrapment: acknowledge the call, locate the car, communicate with those inside, and request elevator service",
+        "Explain how to stay calm, use clear radio language and report status during every code",
+        "Code Gray (inclement weather): a status sent across the hospital system to prepare for severe weather; explain the officer's preparation duties",
+        "Active shooter: announced plainly as \"active shooter\" so there is absolute clarity; explain the officer's response and communication"
+      ]
+    },
+    {
+      id: 4,
+      title: "Dispatch operations",
+      intro: "Practice in the Security Operations Center with your trainer. Use Resolver for reports, CCURE for access and Avigilon for camera operations.",
+      tasks: [
+        "Start and close a guard tour and confirm the tour is secured; two tours are required each shift",
+        "Record tour completion percentage and each officer's completions",
+        "Run radio checks and log them",
+        "Take service calls, assign them to an officer and track them to completion",
+        "Enter dispatch notes and calls for service in Resolver, including Avigilon camera names and body-worn camera serial numbers",
+        "View, switch and manage cameras in Avigilon, and know which cameras cover each key post",
+        "Monitor and respond to Gamma Knife alarms and cameras",
+        "Take emergency call box calls and elevator entrapment calls",
+        "Receive and clear panic and duress alarms, and send an officer so one arrives within 2.5 minutes",
+        "Monitor HUGS floors and respond to HUGS alarms",
+        "Dispatch and clear a Code Green and assign the responders",
+        "Dispatch and clear Code Pink, Code Red, Code Blue, Code Gray and Rapid Response calls, and announce an active shooter plainly as \"active shooter\"",
+        "Dispatch and clear elevator entrapments",
+        "Decide how to staff a response with the Team Lead, Senior Officer or Officer in Charge",
+        "Create a TSI report",
+        "Create a TSI facility ticket and work order",
+        "Create a badge and add or remove clearances in CCURE",
+        "Log patient property in the property log with the MRN sticker handed over in person, never read over the radio",
+        "Track keys, radios and body-worn cameras on the inventory lists",
+        "Download scene photos to the system and never use personal phones",
+        "Escalate crimes on campus and news-media- worthy events promptly"
+      ]
+    },
+    {
+      id: 5,
+      title: "Vehicle patrol & perimeter",
+      intro: "Inspect before driving, patrol safely and document findings. Coordinate parking enforcement and towing through the approved process.",
+      tasks: [
+        "Complete the vehicle inspection sheet at the start of every shift and report damage or defects before driving",
+        "Use the fuel card and notify management when the vehicle needs refueling",
+        "Drive safely on campus, yield to pedestrians, ambulances and Life Flight traffic",
+        "Radio dispatch on leaving and returning from patrol and when stopping for an incident",
+        "Identify parking violations and apply the department enforcement process",
+        "Handle a driver who disputes a violation calmly and professionally",
+        "Tow a vehicle: required approvals, documentation, notifications and tow company contact",
+        "Escalate high-value or sensitive vehicles to the immediate supervisor before any tow",
+        "Check exterior stairwells for loitering, damage, trash and unsecured doors",
+        "Check lighting in all garage areas and report outages and dark areas",
+        "Perimeter checks of all building doors at night: confirm each is locked and report any that are not",
+        "Record each patrol in Resolver and notify dispatch of every finding"
+      ]
+    },
+    {
+      id: 6,
+      title: "Medical plazas",
+      intro: "Learn the operating hours, contacts and access arrangements for each assigned plaza. Complete the reference sheet with your trainer.",
+      tasks: [
+        "State each plaza's hours of operation and what changes after hours",
+        "Complete the round of the plaza perimeter and report findings to dispatch",
+        "Contact the contract security officers for each plaza and explain who handles what",
+        "Locate the plaza elevator access card in the TRAKA system, which opens to a new officer once clearance is granted in the system; explain who may use it and how it is signed out and returned",
+        "Explain the emergency response process and the contact numbers for each plaza's security operation",
+        "Secure and unsecure plaza doors at the correct times and log them",
+        "Respond to a plaza incident, request backup and complete the report"
+      ]
+    },
+    {
+      id: 7,
+      title: "Interior rounds & property",
+      intro: "Support safe hospital operations through rounds, emergency response, documented door access and accountable property handling.",
+      tasks: [
+        "Respond to a Code Green as the assigned rounding officer, as part of the four-officer response",
+        "Respond to a duress alarm and clear it with dispatch",
+        "Respond to Code Pink, Code Red, Code Blue, Code Gray, active shooter, Rapid Response and elevator entrapments",
+        "Code Angel (intake or release of a deceased patient, with Hospital Administrator approval): receive the patient into the morgue and release to a funeral home with Hospital Administrator approval, following the full procedure",
+        "Patrol sensitive areas and waiting rooms, and report findings to dispatch",
+        "Round behavioral patient locations and report concerns to dispatch and unit staff",
+        "Respond to a patient belongings call: start the body-worn camera, tell dispatch, and go to the location",
+        "Witness the clinical staff member's inventory while the sheet is completed in full",
+        "Route the inventory copies correctly: patient or chart copy and pink copy on the bag",
+        "Deliver sealed property in person to the dispatch office, never store it in the Emergency Center",
+        "Place property in the property room or locker and state the location aloud so dispatch can log it",
+        "Handle Behavioral Health Patient (BHP) property and store it in the behavioral patient lockers",
+        "Document each transfer between units and notify dispatch before moving and when arriving",
+        "Document each request by staff to unlock a door: who, where, when and why",
+        "Complete hospital lockups and unlocks on schedule and log them",
+        "Respond to a lost and found report: take the report, record the item and follow the turn-in process"
+      ]
+    },
+    {
+      id: 8,
+      title: "Emergency Center & privacy",
+      intro: "Provide professional visitor support, conduct screening under approved policy and protect patient information.",
+      tasks: [
+        "Greet visitors and patients during business hours with a professional, welcoming approach",
+        "Run weapons detection screening: bag search steps, wanding, and handling a red-light alarm",
+        "Explain tobacco and ignition-source rules at the screening point and the amnesty box",
+        "Document visitors to the hospital after business hours",
+        "Patrol the waiting lobbies, perimeter and valet area and report findings to dispatch",
+        "Respond to every code and call for help from the Emergency Center",
+        "HIPAA: explain what protected health information is and what an officer may never say, post or share",
+        "Never discuss a patient's presence, condition or location with callers or visitors unless policy allows",
+        "Durfee (DERFI) letters: explain when law enforcement must complete one and what it must contain",
+        "Collect completed letters and give them to the immediate supervisor or Senior Officer by end of shift",
+        "If law enforcement refuses to sign, ask for the badge number, document the refusal and escalate to Emergency Room management",
+        "Emergency Detention Order (EDO) arrivals: required forms and documentation"
+      ]
+    }
+  ],
+
+  quiz: [
+    {
+      id: 1,
+      q: "How many breaks does an officer on a stationary post receive per shift?",
+      options: [
+        "One 30-minute lunch only",
+        "Two 15-minute breaks and one 30-minute lunch",
+        "Three 20-minute breaks",
+        "Breaks only when the post is slow"
+      ],
+      answer: 1
+    },
+    {
+      id: 2,
+      q: "When may an officer leave a stationary post?",
+      options: [
+        "Any time the area is quiet",
+        "When a coworker asks",
+        "Only when properly relieved, or to protect life",
+        "After two hours on post"
+      ],
+      answer: 2
+    },
+    {
+      id: 3,
+      q: "What should an officer do after losing a Memorial Hermann ID badge?",
+      options: [
+        "Wait until the end of the shift",
+        "Borrow a coworker's badge",
+        "Tell HR next week",
+        "Report it to dispatch and the supervisor immediately"
+      ],
+      answer: 3
+    },
+    {
+      id: 4,
+      q: "Which information must never be said over the radio?",
+      options: [
+        "A patient's MRN and personal information",
+        "The officer's location",
+        "The type of call",
+        "A request for assistance"
+      ],
+      answer: 0
+    },
+    {
+      id: 5,
+      q: "What is the dispatch extension on a hospital phone?",
+      options: [
+        "40000",
+        "4000",
+        "400",
+        "4"
+      ],
+      answer: 0
+    },
+    {
+      id: 6,
+      q: "When must the reflective vest be worn on a traffic post?",
+      options: [
+        "Only at night",
+        "Only in the rain",
+        "At all times",
+        "Only when a supervisor is present"
+      ],
+      answer: 2
+    },
+    {
+      id: 7,
+      q: "How many guard tours are required each shift?",
+      options: [
+        "One",
+        "Three",
+        "Four",
+        "Two"
+      ],
+      answer: 3
+    },
+    {
+      id: 8,
+      q: "What response time applies to a duress alarm?",
+      options: [
+        "Within 15 minutes",
+        "Within 10 minutes",
+        "A physical response in 2.5 minutes or less",
+        "Only after the next guard tour"
+      ],
+      answer: 2
+    },
+    {
+      id: 9,
+      q: "What is a Code Blue?",
+      options: [
+        "Fire",
+        "A patient in cardiac arrest",
+        "Infant abduction",
+        "Volatile behavior"
+      ],
+      answer: 1
+    },
+    {
+      id: 10,
+      q: "What is a Code Red?",
+      options: [
+        "Fire",
+        "Severe weather",
+        "Cardiac arrest",
+        "Missing child"
+      ],
+      answer: 0
+    },
+    {
+      id: 11,
+      q: "What is a Code Pink?",
+      options: [
+        "Fire",
+        "Cardiac arrest",
+        "Severe weather",
+        "Infant abduction or a breach of the L&D or child barrier"
+      ],
+      answer: 3
+    },
+    {
+      id: 12,
+      q: "Why is a Code Green response limited to about four officers?",
+      options: [
+        "Other officers are on break",
+        "It is not a fixed rule",
+        "It allows quick assessment without overwhelming the scene, which could escalate it and deplete coverage elsewhere",
+        "Only supervisors may respond"
+      ],
+      answer: 2
+    },
+    {
+      id: 13,
+      q: "When is Rapid Response called?",
+      options: [
+        "A medical emergency in the immediate area",
+        "A fire",
+        "A parking dispute",
+        "Lost property"
+      ],
+      answer: 0
+    },
+    {
+      id: 14,
+      q: "What is the correct response to an elevator entrapment?",
+      options: [
+        "Pry the doors open",
+        "Wait for maintenance to call",
+        "Evacuate the building",
+        "Acknowledge the call, locate the car, talk with those inside and request elevator service"
+      ],
+      answer: 3
+    },
+    {
+      id: 15,
+      q: "A caller asks whether a patient is in the hospital. What is the correct response?",
+      options: [
+        "Confirm and give the room number",
+        "Do not disclose patient information unless policy allows, and refer the caller to the proper channel",
+        "Give the patient's condition only",
+        "Ask the caller's relationship, then give the room"
+      ],
+      answer: 1
+    },
+    {
+      id: 16,
+      q: "Where does sealed patient property go after the inventory?",
+      options: [
+        "Stored in the Emergency Center",
+        "The officer's locker",
+        "Delivered in person to the dispatch office, then placed in the property room or locker",
+        "The patient's vehicle"
+      ],
+      answer: 2
+    },
+    {
+      id: 17,
+      q: "Where does the pink copy of the inventory sheet go?",
+      options: [
+        "Attached to the property bag",
+        "Given to the patient",
+        "Discarded",
+        "Given to law enforcement"
+      ],
+      answer: 0
+    },
+    {
+      id: 18,
+      q: "Where is Behavioral Health Patient property stored?",
+      options: [
+        "On the general property room shelf",
+        "In Emergency Center storage",
+        "In the security desk drawer",
+        "In the behavioral patient lockers"
+      ],
+      answer: 3
+    },
+    {
+      id: 19,
+      q: "What does a red light on the weapons detection system mean?",
+      options: [
+        "The system is ready",
+        "An alarm, so use the hand wand to locate the item before entry",
+        "The person may pass through",
+        "The battery is low"
+      ],
+      answer: 1
+    },
+    {
+      id: 20,
+      q: "How should bags be searched at weapons detection?",
+      options: [
+        "Reach in with bare hands",
+        "Dump the bag on the floor",
+        "The owner opens the bag and displays the contents, and the officer never places bare hands inside",
+        "Skip bags that look empty"
+      ],
+      answer: 2
+    },
+    {
+      id: 21,
+      q: "What is the rule on tobacco and lighters beyond weapons detection?",
+      options: [
+        "They are not permitted: discard them, use the amnesty box or return them to the vehicle",
+        "They are allowed in the waiting room",
+        "They are allowed for staff",
+        "They are allowed outdoors only"
+      ],
+      answer: 0
+    },
+    {
+      id: 22,
+      q: "A law enforcement officer refuses to complete or sign the Durfee letter. What does the officer do?",
+      options: [
+        "Ignore it",
+        "Take their weapon",
+        "Deny all entry for an hour",
+        "Respectfully ask for the badge number, document the refusal and escalate to Emergency Room management"
+      ],
+      answer: 3
+    },
+    {
+      id: 23,
+      q: "What is Resolver used for?",
+      options: [
+        "Payroll",
+        "Parking permits",
+        "Incident reports and dispatch calls for service",
+        "Printing badges"
+      ],
+      answer: 2
+    },
+    {
+      id: 24,
+      q: "Which system is used to view the CCTV cameras?",
+      options: [
+        "CCURE",
+        "Avigilon",
+        "Resolver",
+        "Axon"
+      ],
+      answer: 1
+    },
+    {
+      id: 25,
+      q: "What is CCURE used for?",
+      options: [
+        "Access control and badge clearances",
+        "Camera viewing",
+        "Fuel tracking",
+        "Radio checks"
+      ],
+      answer: 0
+    },
+    {
+      id: 26,
+      q: "When is the vehicle inspection sheet completed?",
+      options: [
+        "Weekly",
+        "Monthly",
+        "Only after an accident",
+        "At the start of every shift"
+      ],
+      answer: 3
+    },
+    {
+      id: 27,
+      q: "What should an officer do when the patrol vehicle needs fuel?",
+      options: [
+        "Use a personal card",
+        "Notify management so it can be refueled with the fuel card",
+        "Park the vehicle",
+        "Ignore it until the next shift"
+      ],
+      answer: 1
+    },
+    {
+      id: 28,
+      q: "What is the purpose of night perimeter door checks?",
+      options: [
+        "Cleaning the windows",
+        "Counting visitors",
+        "Confirming each door is locked and reporting any that are not",
+        "Issuing parking tickets"
+      ],
+      answer: 2
+    },
+    {
+      id: 29,
+      q: "What should an officer do on finding a garage light out?",
+      options: [
+        "Report and document it",
+        "Ignore it",
+        "Repair it",
+        "Wait until morning"
+      ],
+      answer: 0
+    },
+    {
+      id: 30,
+      q: "What should an incident report contain?",
+      options: [
+        "Only injuries",
+        "The officer's opinions",
+        "A verbal summary only",
+        "Factual details of who, what, when and where, actions taken and notifications, with no opinions"
+      ],
+      answer: 3
+    },
+    {
+      id: 31,
+      q: "What is a Code Angel?",
+      options: [
+        "A fire in the facility",
+        "A severe weather status",
+        "The intake or release of a deceased patient, with Hospital Administrator approval",
+        "A missing patient"
+      ],
+      answer: 2
+    },
+    {
+      id: 32,
+      q: "What is a Code Gray?",
+      options: [
+        "A fire in the facility",
+        "A patient in cardiac arrest",
+        "An active shooter",
+        "An inclement weather status sent across the hospital system"
+      ],
+      answer: 3
+    },
+    {
+      id: 33,
+      q: "How is an active shooter announced?",
+      options: [
+        "As a color code",
+        "Plainly as \"active shooter\" so there is absolute clarity",
+        "By quiet phone calls only",
+        "Only to supervisors"
+      ],
+      answer: 1
+    }
+  ],
+
+  examples: [
+    {
+      title: "Code Green · Emergency Center",
+      text: "At 14:12 the registration clerk asked me for help with Visitor 1, who was\nshouting at staff about a wait time. I notified dispatch by radio and requested a Code\nGreen. Visitor 1 continued shouting and stepped toward the triage desk. I stood at a safe\ndistance, kept my hands visible and asked him to speak with me away from the desk. He\nagreed at 14:15 and walked with me to the side of the lobby. The Senior Officer arrived at\n14:16. I explained the wait process, and he sat down at 14:21. No force was used, no one\nwas injured and no property was damaged. Dispatch cleared the Code Green at 14:24. The\nED Charge Nurse was told about the incident."
+    },
+    {
+      title: "Vehicle damage · Sterling Garage",
+      text: "At 19:40 a visitor flagged me down on Level 3 and reported that her silver sedan\nhad a dent and paint transfer on the rear bumper that was not there when she parked at\n15:30. I photographed the damage with the department camera and recorded the vehicle\nplate. The visitor said she did not see the collision. I asked dispatch to review Sterling-L3-\nEast for the 15:30 to 19:40 period. Dispatch reported that no footage showed the area of\nthe vehicle. I gave the visitor the report number, told her that she may file a police report,\nand offered to escort her to the exit. She declined an escort and left at 20:05. The Security\nSupervisor was notified."
+    },
+    {
+      title: "Elevator entrapment",
+      text: "At 08:05 dispatch sent me to Elevator 4 after an emergency call from inside the\ncar. I arrived at 08:08 and spoke with the two visitors through the door. Neither reported\nan injury or medical problem. I told them that help was on the way and stayed beside the\nelevator. Dispatch contacted elevator service at 08:09 and I confirmed the car location. I\nkept the area clear and spoke with the visitors every few minutes. Elevator service arrived\nat 08:34 and brought the car to the next floor at 08:41. The two visitors left the elevator\nunhurt. Dispatch cleared the call at 08:45."
+    }
+  ]
+};
